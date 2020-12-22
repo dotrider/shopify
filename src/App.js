@@ -1,6 +1,6 @@
 import '../src/Components/Products/Products';
-import Products from '../src/Components/Products/Products';
-import Nav from './Components/Nav/Nav';
+import { Nav, Products } from './Components'
+
 import './App.css';
 
 function App() {
