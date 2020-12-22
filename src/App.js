@@ -1,5 +1,6 @@
 import '../src/Components/Products/Products';
-import { Nav, Products } from './Components'
+import { Nav, Products } from './Components';
+import { Commerce } from './lib/Commerce';
 
 import './App.css';
 
