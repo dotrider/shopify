@@ -4,14 +4,9 @@ import { Grid } from '@material-ui/core';
 
 
 
-//test api
-const products = [
-    { id:1, name: "T-shirt", description: "100% cotton", price: 10.00},
-    { id: 2, name: 'Decal', description: 'No-sponsors logo', price: 7.00}
-]
 
-
-export const Products = () => {
+export const Products = ({products}) => {
+    console.log('product', products)
     return (
         <div>
             <Grid container justify="center" spacing={4}>

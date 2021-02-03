@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <Products/>
+      <Products products={products}/>
     </div>
   );
 }
