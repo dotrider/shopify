@@ -2,7 +2,7 @@ import React from 'react'
 import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 
-const Nav = () => {
+const Nav = ({ cart: {total_items} }) => {
     return (
         <>
             <AppBar position="fixed" color="inherit">
@@ -14,7 +14,7 @@ const Nav = () => {
                     <div className=""/>
                     <div className="">
                         <IconButton>
-                            <Badge badgeContent={2} color="secondary">
+                            <Badge badgeContent={total_items} color="secondary">
                                 <ShoppingCart/>
                             </Badge>
                         </IconButton>
